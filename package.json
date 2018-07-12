@@ -1,0 +1,119 @@
+{
+  "name": "gulptheme",
+  "version": "0.9.0",
+  "description": "Gulp Theme",
+  "main": "webpack.config.js",
+  "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "postinstall": "node gulp/util/postInit.js"
+  },
+  "keywords": [
+    "Gulp",
+    "Theme"
+  ],
+  "author": "Saul Nachman & Kulahin Anton",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.40",
+    "colors": "^1.1.2",
+    "form-data": "^2.1.4",
+    "formstream": "^1.1.0",
+    "inquirer": "^3.0.6",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "request": "^2.81.0",
+    "rxjs": "^5.5.6",
+    "urllib": "^2.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.38",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-minify": "^0.3.0",
+    "babili-webpack-plugin": "^0.1.2",
+    "compression-webpack-plugin": "^1.1.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^8.0.0-beta.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-prompt": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-sass-grapher": "^0.1.4",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-upload": "^0.0.3",
+    "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.4.0",
+    "happypack": "^5.0.0",
+    "hard-source-webpack-plugin": "^0.7.6",
+    "install": "^0.10.4",
+    "postcss": "^6.0.23",
+    "postcss-pixels-to-rem": "^0.8.0",
+    "webpack": "^4.8.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-sources": "1.0.1",
+    "webpack-stream": "^4.0.2"
+  },
+  "resolutions": {
+    "serve-static": "1.13.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "babel-plugin-transform-react-jsx"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "allowImportExportEverywhere": false,
+      "codeFrame": false
+    },
+    "rules": {
+      "no-console": 0,
+      "strict": 0,
+      "no-alert": 0,
+      "no-bitwise": 0,
+      "camelcase": 0,
+      "curly": 1,
+      "eqeqeq": 0,
+      "no-eq-null": 0,
+      "guard-for-in": 1,
+      "no-empty": 1
+    },
+    "globals": {
+      "$": false,
+      "jQuery": false,
+      "Sitecore": false,
+      "XA": false,
+      "_": false
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    }
+  }
+}
